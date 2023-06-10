@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") -%>
+
+    <main>
+
+        <div class="main-content">
+
+            <div class="main-head">
+                <h1>Compose</h1>
+            </div>
+    
+            <div class="comp">
+                <form action="/compose" method="post">
+                    <div class="title">
+                        <label for="titleLabel">Title</label>
+                        <input type="text" id="titleLabel" name="titleInput" placeholder="enter your title here" required>
+                    </div>
+                    <div class="post">
+                        <label for="postLabel">Post</label>
+                        <textarea name="postTextarea" id="postLabel" placeholder="enter your post" required></textarea>
+                    </div>
+                    <div class="composeBtn">
+                        <button type="submit">Publish</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>    
+
+<%- include("partials/footer.ejs") -%>
